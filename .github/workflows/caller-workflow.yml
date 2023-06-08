@@ -16,3 +16,16 @@ jobs:
       var_b: ${{ vars.VAR_B }}
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
+
+  print-vars:
+    runs-on: ubuntu-latest
+    steps:
+    - name: print-vars
+      run: |
+         echo "VAR-A is : ${{ vars.VAR_A }}"
+         echo "VAR-B is : ${{ vars.VAR_B }}"
+         echo "SECRET is : ${{ secrets.GITHUB_TOKEN }}"
+         
+      
+    
+  
