@@ -12,7 +12,7 @@ jobs:
       pull-requests: write
     uses: SandBoxFeatureOrg/required-workflow-sandbox/.github/workflows/called-workflow.yml@main
     with:
-      var-a: ${{ vars.VAR_A }}
-      var-b: ${{ vars.VAR_B }}
+      var_a: ${{ vars.VAR_A }}
+      var_b: ${{ vars.VAR_B }}
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
